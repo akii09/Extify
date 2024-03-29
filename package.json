@@ -1,5 +1,5 @@
 {
-    "name": "extensioGen",
+    "name": "extensio_gen",
     "version": "1.0.0",
     "description": "Create Chrome extension boilerplates with React, Vue, or JavaScript",
     "main": "index.js",
@@ -17,7 +17,8 @@
     },
     "scripts": {
       "test": "jest",
-      "prepublish": "npm run test"
+      "prepublish": "npm run test",
+      "extension_gen": "node createProject.js"
     },
     "keywords": [
       "chrome",
