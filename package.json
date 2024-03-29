@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "description": "Create Chrome extension boilerplates with React, Vue, or JavaScript",
     "main": "index.js",
-    "private": true,
     "homepage": "https://github.com/akii09/Extify#readme",
     "bugs": {
         "url": "https://github.com/akii09/Extify/issues"
