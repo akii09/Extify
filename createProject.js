@@ -20,7 +20,13 @@ async function createProject(answers) {
     },
   ]);
 
-  const templatePath = path.join(templatesDir, framework.toLowerCase());
+  const frameworkToTemplateMap = {
+    React: 'react',
+    Vue: 'vue',
+    'JavaScript (Vanilla)': 'javascript'
+  };
+
+  const templatePath = path.join(templatesDir, frameworkToTemplateMap[framework]);
 
   try {
     await fs.copy(templatePath, projectName);

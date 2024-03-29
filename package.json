@@ -1,5 +1,5 @@
 {
-    "name": "extify",
+    "name": "extensioGen",
     "version": "1.0.0",
     "description": "Create Chrome extension boilerplates with React, Vue, or JavaScript",
     "main": "index.js",
