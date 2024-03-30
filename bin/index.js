@@ -2,14 +2,12 @@
 
 // Import needed packages
 import inquirer from 'inquirer';
-import { promises as fs } from 'fs';
+import fs from 'fs';
 import path, { dirname as pathDirname } from 'path';
 import { fileURLToPath } from 'url';
 
 // __dirname in ES Module scope
 const __dirname = pathDirname(fileURLToPath(import.meta.url));
-
-// Then you can use __dirname as before
 
 // Paths to templates
 const templates = {
