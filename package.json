@@ -6,8 +6,8 @@
         "create-extensio-gen": "./bin/index.js"
     },
     "files": [
-        "bin",
-        "templates"
+        "bin/index.js",
+        "templates/**/*"
     ],
     "type": "module",
     "main": "index.js",
