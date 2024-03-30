@@ -1,16 +1,22 @@
 #!/usr/bin/env node
 
-// Include needed packages
+// Import needed packages
 import inquirer from 'inquirer';
-import fs from 'fs';
-import path from 'path';
+import { promises as fs } from 'fs';
+import path, { dirname as pathDirname } from 'path';
+import { fileURLToPath } from 'url';
+
+// __dirname in ES Module scope
+const __dirname = pathDirname(fileURLToPath(import.meta.url));
+
+// Then you can use __dirname as before
 
 // Paths to templates
 const templates = {
   "React": path.join(__dirname, 'templates', 'react'),
   "Vue": path.join(__dirname, 'templates', 'vue'),
   "Javascript": path.join(__dirname, 'templates', 'javascript'),
-}
+};
 
 // Ask questions
 inquirer
