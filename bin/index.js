@@ -1,11 +1,14 @@
+#!/usr/bin/env node
+
+// Import needed packages
 import inquirer from 'inquirer';
 import fs from 'fs';
 import path, { dirname as pathDirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = pathDirname(fileURLToPath(import.meta.url));
-console.log(__dirname, '__dirname');
-
+console.log(__dirname, '__dirname')
+// Paths to templates
 const templates = {
     "React": path.join(__dirname, '..', 'templates', 'react'),
     "Vue": path.join(__dirname, '..', 'templates', 'vue'),
