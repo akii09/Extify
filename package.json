@@ -25,7 +25,7 @@
     },
     "scripts": {
         "test": "jest",
-        "prepublish": "npm link"
+        "prepublishOnly": "npm link"
     },
     "keywords": [
         "chrome",
